@@ -4,11 +4,14 @@
 const searchSong = async () => {
     const searchText = document.getElementById('search-field').value;
     const url = `https://api.lyrics.ovh/suggest/${searchText}`;
-    const res = await fetch(url);
-    const data = await res.json();
-    displaySongs(data.data);
+    try {
+        const res = await fetch(url);
+        const data = await res.json();
+        displaySongs(data.data);
+    } catch (error) {
+        console.log('Link not found!!!😠😠😠😠😠😠😠');
+    }
 };
-
 /**
  * Display Songs in Frontend
  * @param {*} songs
@@ -44,12 +47,21 @@ const displaySongs = (songs) => {
 
 const getLyrics = async (artist, title) => {
     const url = `https://api.lyrics.ovh/v1/${artist}/${title}`;
-    const res = await fetch(url);
-    const data = await res.json();
-    displayLyrics(data.lyrics);
+    try {
+        const res = await fetch(url);
+        const data = await res.json();
+        displayLyrics(data.lyrics);
+    } catch (error) {
+        displayErrorMessage('Lyrics not found. Please try again🌝🌝🌝🌝🌝🌝');
+    }
 };
 
 const displayLyrics = (lyrics) => {
     const songLyrics = document.getElementById('song-lyrics');
     songLyrics.innerText = lyrics;
+};
+
+const displayErrorMessage = (error) => {
+    const errorMessage = document.getElementById('error-message');
+    errorMessage.innerText = error;
 };
