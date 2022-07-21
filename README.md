@@ -139,8 +139,6 @@ Project Link: [https://github.com/imranhasan871/hard-rock](https://github.com/im
 Acknowledgements are what make the open source community such an amazing place to learn, inspire, and create.
 I used the following resources to create this project. Here are a few examples. (You can also use the `README.md` file as a template.) You may also link to more resources.
 
-# hard-rock-solution
-
 ### Search Song
 
 api link: https://api.lyrics.ovh/suggest/:searchText
