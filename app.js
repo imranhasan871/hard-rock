@@ -19,6 +19,9 @@ const displaySongs = (songs) => {
                         <p class="author lead">
                             Album by <span>${song.artist.name}</span>
                         </p>
+                         <audio controls>
+                            <source src="${song.preview}" type="audio/ogg">
+                        </audio>
                     </div>
                     <div class="col-md-3 text-md-right text-center">
                         <button class="btn btn-success">Get Lyrics</button>
