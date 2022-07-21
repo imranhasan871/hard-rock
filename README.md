@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/imranhasan871/hard-rock">
-    <img src="./images/logo.svg" alt="Logo" width="80" height="80">
+    <img src="./images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">This is Hard Rock Songs</h3>
@@ -53,7 +53,7 @@
 
 ## About The Project
 
-![hard-rock](https://user-images.githubusercontent.com/33188928/180201552-325a2ff6-efa1-4602-81fc-9d5271d50e30.png)
+![hard-rock](https://user-images.githubusercontent.com/33188928/180274322-ffd0697f-d43e-45a3-b2d4-544d20e44066.png)
 
 There are many ways to describe a project. This is one of them. It's a project that I've been working on for a while. This is a Food Searching App. I've been working on this for a while and I'm very happy with the result. I hope you enjoy it. I hope you find it useful. I use API to search for food.
 
